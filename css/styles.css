@@ -5,11 +5,18 @@
    Common Style
 ---------------- */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
 
 .container{
+    width: 1321px;
+    margin: auto;
 }
 
 /* ------------
@@ -35,8 +42,8 @@ Style Banner Part
     margin-top: 40px;
 }
 
-h1{
-    font-size: 70px;
+.banner-heading h1{
+    font-size: 4em;
     font-weight: 700;
     color: #fff;
     line-height: 80px;
@@ -155,19 +162,22 @@ article{
     background-color: transparent;
     border-radius: 5px;
     padding: 5px 15px;
+    margin: 10px 0;
 }
 
-.blog-item-title{
+.blog-text-title{
     font-size: 18px;
     line-height: 27px;
     color: #161616;
     font-weight: 600;
+    padding: 10px 0;
 }
 
 .blog-info{
     display: flex;
     justify-content: space-between;
     width: 150px;
+    padding: 10px 0;
 
 }
 
@@ -178,6 +188,66 @@ article{
 .fa-clock, .fa-comment-dots, span{
     color: rgba(22, 22, 22, 0.7);
     margin-left: 5px;
+}
+
+/* -------------
+Style Footer Part 
+----------------*/
+
+footer{
+    background-color: #161616;
+}
+
+.footer-heading{
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 15px 0;
+}
+
+.footer-menu{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-menu ul{
+    list-style: none; 
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    justify-content: center;
+}
+
+.footer-menu ul li a{
+    text-decoration: none;
+    color: #B9B9B9;
+}
+
+.social-icon{
+}
+
+.social-icon ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    
+}
+
+.social-icon ul li{
+    margin: 0 10px;
+}
+
+.social-icon ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
 }
 
 /* Animation */
