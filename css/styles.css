@@ -1,0 +1,89 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --------------
+   Common Style
+---------------- */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+}
+
+/* ------------
+Style Banner Part
+-------------- */
+
+#banner{
+    width: 1121px;
+    height: 646px;
+    margin: auto;
+    background-color: #161616;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-top: 40px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.banner-heading{
+    margin-top: 40px;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 80px;
+}
+
+.banner-heading p{
+    color: #fff;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#watch-live{
+    background-color: #8a2be2;
+    padding: 14px 45px 15px 25px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0;
+    position: relative;
+}
+
+
+.banner-image img{
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 581px;
+}
+
+.fa-chevron-right{
+    position: absolute;
+    right: 0%;
+    top: 32%;
+    animation: arrow .8s linear infinite;
+    animation-direction: alternate;
+}
+
+/* Animation */
+@keyframes arrow {
+    0%{
+        left: 90%;
+    }
+    100%{
+        left: 80%;
+    }
+}
