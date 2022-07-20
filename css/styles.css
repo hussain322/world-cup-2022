@@ -91,7 +91,7 @@ Style Banner Part
     width: 1321px;
     margin: 80px auto;
     display: grid;
-    grid-template-columns:312px 1fr;
+    grid-template-columns:312px auto;
     grid-column-gap: 24px;
 }
 
@@ -248,6 +248,41 @@ hr{
     text-decoration: none;
     color: #fff;
     font-size: 24px;
+}
+
+/* -----------------------
+Style Upcoming Match Page
+------------------------ */
+
+.match-schedule{
+    height: 250px;
+}
+.match-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.match-info img{
+    margin: 0 20px;
+}
+
+.match-title{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.match-title h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #161616;
+}
+
+.match-title p{
+    color: #4D4D4D;
+    font-size: 16px;
 }
 
 /* Animation */
