@@ -121,6 +121,17 @@ h1{
     display: block;
     line-height: 64px;
     border-radius: 10px;
+    transition: .2s all ease-in-out;
+}
+
+.link-button:hover{
+    color: #fff;
+    background-color: #8a2be2;
+}
+
+.active{
+    background-color: #7722c7;
+    color: #fff;
 }
 
 .blog-item{
