@@ -108,13 +108,7 @@ Style Banner Part
     align-items: center;
 }
 
-.blog-menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.blog-menu ul li{
+.menu-item{
     border-radius: 10px;
     padding: 10px 0;
 }
@@ -130,6 +124,7 @@ Style Banner Part
     line-height: 64px;
     border-radius: 10px;
     transition: .3s all ease-in-out;
+    font-weight: 600;
 }
 
 .link-button:hover{
@@ -189,6 +184,10 @@ article{
 .fa-clock, .fa-comment-dots, span{
     color: rgba(22, 22, 22, 0.7);
     margin-left: 5px;
+}
+
+.view-all{
+    display: none;
 }
 
 /* -------------
@@ -383,7 +382,7 @@ Media Querys
     }
 }
 
-/* Tablet Responsive */
+/* Tablet Devices */
 
 @media only screen and (min-width:689px) and  (max-width:992px) {
     
@@ -427,18 +426,26 @@ Media Querys
     
     .blog-menu{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color: transparent;
         padding-top: 0;
-    }
-
-    .blog-item{
-        grid-template-columns: repeat(2, 1fr);
+        height: 0px;
+        padding-bottom: 50px;
     }
 
     .link-button{
         border: 1px solid #c8c6c6;
         font-weight: 600;
+        height: 50px;
+        width: 200px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .menu-item{
+        margin: 0 3px;
+    }
+    .blog-item{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .active{
@@ -449,11 +456,27 @@ Media Querys
         width: 100%;
     }
 
+    .hide{
+        display: none;
+    }
 
-
-
+    .view-all{
+        display: block;
+        background-color: #7722c7;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 12px 35px;
+        margin-top: 50px;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+    }
 
     footer{
-        display: none;
+        width: 100%;
+    }
+
+    .footer-menu ul{
+        grid-template-columns: repeat(6, 150px);
     }
 }

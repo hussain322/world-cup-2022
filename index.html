@@ -44,11 +44,9 @@
     <main>
         <div id="blog-section">
             <div class="blog-menu">
-                <ul>
-                    <li id="upcoming-match"><a class="link-button" href="upcoming-match.html">Upcoming Match</a></li>
-                    <li id="all-group"><a class="link-button" href="">All Group</a></li>
-                    <li id="blog"><a class="link-button active" href="">Blog</a></li>
-                </ul>
+                    <div id="upcoming-match" class="menu-item"><a class="link-button" href="upcoming-match.html">Upcoming Match</a></div>
+                    <div id="all-group" class="menu-item"><a class="link-button" href="">All Group</a></div>
+                    <div id="blog" class="menu-item"><a class="link-button active" href="">Blog</a></div>
             </div>
             <div class="blog-item">
                 <article>
@@ -195,7 +193,7 @@
                   </div>
 
                 </article>
-                <article>
+                <article class="hide">
                     <img src="images/Blog Image.png" alt="image">
                   <div class="blog-text">
                     <p><button class="transfer-btn">Transfer</button></p>
@@ -214,6 +212,8 @@
 
                 </article>
             </div>
+
+            <button class="view-all">View All</button>
             
         </div>
     </main>
