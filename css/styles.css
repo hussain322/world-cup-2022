@@ -167,6 +167,13 @@ article img{
     border-radius: 5px;
     padding: 5px 15px;
     margin: 10px 0;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.transfer-btn:hover{
+    background-color: #7722c7;
+    color: #fff;
 }
 
 .blog-text-title{
@@ -255,7 +262,7 @@ hr{
 .social-icon ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 /* -----------------------
