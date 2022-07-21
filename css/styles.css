@@ -25,7 +25,7 @@ Style Banner Part
 
 #banner{
     width: 1121px;
-    height: 646px;
+    min-height: 646px;
     margin: auto;
     background-color: #161616;
     margin: auto;
@@ -39,7 +39,7 @@ Style Banner Part
 }
 
 .banner-heading{
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .banner-heading h1{
@@ -56,6 +56,7 @@ Style Banner Part
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 400;
+    padding: 20px 0;
 }
 
 #watch-live{
@@ -73,8 +74,8 @@ Style Banner Part
 .banner-image img{
     position: absolute;
     bottom: 0;
-    right: 40px;
-    width: 581px;
+    right: 50px;
+    width: 44%;
 }
 
 .fa-chevron-right{
@@ -128,7 +129,7 @@ Style Banner Part
     display: block;
     line-height: 64px;
     border-radius: 10px;
-    transition: .2s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 .link-button:hover{
@@ -278,6 +279,7 @@ Style Upcoming Match Page
     font-size: 20px;
     font-weight: 600;
     color: #161616;
+    line-height: 40px;
 }
 
 .match-title p{
@@ -285,12 +287,102 @@ Style Upcoming Match Page
     font-size: 16px;
 }
 
-/* Animation */
+/* -------------
+Animation
+------------- */
+
 @keyframes arrow {
     0%{
         left: 90%;
     }
     100%{
         left: 80%;
+    }
+}
+
+/* ---------------
+Media Querys
+----------------- */
+
+ /* Mobile Devices */
+
+@media only screen and (max-width:668px) {
+    .container{
+        width: 100%;
+    }
+    #banner{
+        width: 280px; 
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-heading{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .banner-heading h1{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        line-height: 30px;
+    }
+    #watch-live{
+        background-color: #8a2be2;
+        padding: 8px 35px 10px 18px;
+        font-size: 18px;
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-35%);
+    }
+
+    .banner-image img{
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+        width: 70%;
+    }
+
+    #blog-section{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        justify-items: center;
+
+    }
+
+    .blog-menu{
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    .blog-item{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .link-button{
+        border: 1px solid #c8c6c6;
+        font-weight: 600;
+    }
+
+    .link-button:hover{
+    }
+
+    .active{
+        border: 1px solid #7722c7;
+    }
+
+    article img{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .footer-menu ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-menu ul li{
+        margin-top: 20px;
     }
 }
